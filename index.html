@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<head>
+    <title>Exam Website</title>
+    <link rel="stylesheet" href="ExamWebsite.css">
+    <script type="text/javascript" src="ExamWebsite.js"></script>
+</head>
+
+<body>
+    <!--LOGIN FORM-->
+    <section class="loginform" id="loginform">
+        <div class="info"></div>
+        <div class="container1">
+            <div class="main1">
+                <p class="loginheading">LOGIN USING YOUR USERNAME AND PASSWORD</p>
+                <form id="loginform">
+                    <p class="parts"><input class="logininput" type="text" name="username" id="username" placeholder="USERNAME" required></p>
+                    <p class="parts"><input class="logininput" type="password" name="password" id="password" placeholder="PASSWORD" required></p>
+                    <p class="parts"><input class="loginbutton" type="button" value="LOGIN" id="login" onclick="verify()"></p>
+                </form>
+            </div> 
+        </div>
+    </section>
+
+    <!--CONTACT DEATIL FORM-->
+    <section class="contactdetails" id="contactdetails">
+        <div class="container2">
+            <h2 class="contactdetailsheading">CONTACT DETAILS</h2>
+            <form>
+                <p class="para2"><p class="text2">Enter Your Name *</p><input class="type1" type="text" name="name" placeholder="Name" required></p>
+                <p class="para2"><p class="text2">Enter Your Phone Number *</p><input class="type1" type="number" name="mobileno" placeholder="Mobile Number" required></p>
+                <p class="para2"><p class="text2">Enter Your Email Id *</p><input class="type1" type="email" name="email" placeholder="Email Id" required></p>
+                <p class="para2">
+                    <p class="text2">Select Your Department *</p>
+                    <select name="department" id="department" required>
+                        <option value="select">Select</option>
+                        <option value="art">Arts</option>
+                        <option value="bussinessmanagementandcommerce">Business Management and Commerce</option>
+                        <option value="designandfinearts">Design and Fine Arts</option>
+                        <option value="engineeringandtech">Engineering and Technology</option>
+                        <option value="law">Law</option>
+                        <option value="medicalscience">Medical Sciences</option>
+                        <option value="pharmaceuticalscience">Pharmaceutical Sciences</option>
+                    </select>
+                </p>
+                <p class="para2"><p class="text2">Enter Your Class and Group *</p><input class="type1" type="text" name="class" placeholder="Class & Group" required></p>
+                <p class="para2"><p class="text2">Enter Your UID *</p><input class="type1" type="text" name="uid" placeholder="UID" required></p>
+                <p class="para2"><p class="text2">Enter Your Aadhaar Card Number *</p><input class="type1" type="text" name="adharcardno" placeholder="Aadhar Card Number" required></p>
+                <p class="button2"><input class="lbutton2" type="button" value="SUBMIT" onclick="startexam(),timer()" ></p>
+                
+            
+            </form>
+        </div>
+    </section>
+
+    <!--MAIN PAGE HTML-->
+
+    <section class="mainpage" id="mainpage">
+        <div class="container3">
+            <div class="leftpart">
+                <div class="leftpart1">
+                    <div id="instructionsbutton" class="subjects"><input class="instructions" type="button" value="INSTRUCTIONS" onclick="instructionspart()"></div>
+                    <div id="reasoningbutton" class="subjects"><input class="reasoning" type="button" value="REASONING" onclick="reasoningpart()"></div>
+                    <div id="apptitudebutton" class="subjects"><input class="apptitude" type="button" value="APPTITUDE" onclick="apptitudepart()"></div>
+                    <div id="englishbutton" class="subjects"><input class="english" type="button" value="ENGLISH" onclick="englishpart()"></div>
+                    <div id="coresubbutton" class="subjects"><input class="coresub" type="button" value="CORE SUBJECTS" onclick="coresubjectpart()"></div>
+                    <div id="submitexambutton" class="subjects"><input class="submitexam" type="button" value="SUBMIT EXAM" onclick="endpart(),enterscoreintable()"></div>
+                </div>
+                <div class="leftpart2">
+                    <p class="timeleft">Time Left -&nbsp;</p>
+                    <p class="timer" id="timer"></p>
+                </div>
+            </div>
+            <div class="rightpart">
+                <p class="profile">PROFILE</p>
+                <p class="name" id="pusername">NAME - VIDHAN</p>
+                <p class="uid" id="puid">UID - 20BCS9513</p>
+            </div>
+        </div>
+    </section>
+
+    <!--INSTRUCTIONS-->
+    <section class="instructionspart" id="instructionspart"><div class="instcontent">
+        <div class="instcontainer" id="instcontainer">
+            <p class="instheading">IMPORTANT INSTRUCTIONS</p>
+            <ol>
+                <li>The examination will comprise of Objective type Multiple Choice Questions (MCQs).</li>
+                <li>The students just need to click on the Right Choice / Correct option from the multiple choices /options given with each question. For Multiple Choice Questions,each question has four options, and the candidate has to click the appropriate option.</li>
+                <li>Exam consists of 4 sections named Reasoning , Apptitude , English and Core Subjects. Core Subjects consist of subjects like Data Structures , Algorithms , Operating System , Computer Networks , Compiler Design , Data Base Management System , Theory of Computation , Computer Organization and Architecture and Website Development Part which includes HTML , CSS and Java Script.</li>
+                <li>Correct answer will fetch you +4 marks while the wrong answer will fetch you -1. Unattempted questions will give you zero marks for that particular question.</li>
+                <li>You have a total of 30 minutes to attempt the test. The timer above will show you the remaining time. Once your time gets over exam will be autosubmitted.</li>
+                <li>You can go to any section and attempt it according to your convenience. In each section you have GO TO QUESTION box which will help you to move to particular question of that section easily.</li>
+                <li>Answer once submitted cannot be changed.</li>
+                <li>If you wish to submit your exam before 30 minutes , you can do so by clicking the SUBMIT EXAM button. No changes can be done after submitting the exam.</li>
+                <li>Use of calculator,mobile phones or any other electronic gadgets is not allowed during the exam</li>
+                <li>It is compulsory to turn on the camera as well as microphone.</li>
+                <li>Student's face must be clearly visible.</li>
+            </ol>
+        </div></div>
+    </section>
+
+    <!--REASONING PART-->
+    <section class="reasoningpart" id="reasoningpart"><div class="container4">
+        <div class="questions">
+            <a name="rq1link"></a>
+            <div class="r1container"><div class="r1">
+                <p class="rnameq1">QUESTION 1</p>
+                <p class="rq1">In the following question, choose the correct code form.</p>
+                <p class="rq1">If air is called green, green is called red, red is called sea, sea is called blue, blue is called water and water is called pink, then what is the color of grass?</p>
+                <p class="roptions1">
+                    <p class="r1acontainer"><input type="button" class="r1a" id="r1a" value="(A) Green" onclick="r1a()"></p>
+                    <p class="r1bcontainer"><input type="button" class="r1b" id="r1b" value="(B) Air" onclick="r1b()"></p>
+                    <p class="r1ccontainer"><input type="button" class="r1c" id="r1c" value="(C) Red" onclick="r1c()"></p>
+                    <p class="r1dcontainer"><input type="button" class="r1d" id="r1d" value="(D) Pink" onclick="r1d()"></p>
+                </p>
+                <p class="rq1submit"><input class="rq1submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitr1()"></p>
+                <a name="rq2link"></a>
+            </div></div>  
+            <div class="r2container"><div class="r2">
+                <p class="rnameq2">QUESTION 2</p>
+                <p class="rq2">Complete the given series by finding the missing term</p>
+                <p class="rq2">5, 15, 45, 225, ?</p>
+                <p class="roptions2">
+                    <p class="r2acontainer"><input type="button" class="r2a" id="r2a" value="(A) 1024" onclick="r2a()"></p>
+                    <p class="r2bcontainer"><input type="button" class="r2b" id="r2b" value="(B) 1125" onclick="r2b()"></p>
+                    <p class="r2ccontainer"><input type="button" class="r2c" id="r2c" value="(C) 1500" onclick="r2c()"></p>
+                    <p class="r2dcontainer"><input type="button" class="r2d" id="r2d" value="(D) 2250" onclick="r2d()"></p>
+                </p>
+                <p class="rq2submit"><input class="rq2submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitr2()"></p>
+                <a name="rq3link"></a>
+            </div></div>
+            <div class="r3container"><div class="r3">
+                <p class="rnameq3">QUESTION 3</p>
+                <p class="rq3">Pointing to an old woman, Aryan said Her son is my sons uncle.</p>
+                <p class="rq3">How is Aryan related to old woman?</p>
+                <p class="roptions3">
+                    <p class="r3acontainer"><input type="button" class="r3a" id="r3a" value="(A) Mother" onclick="r3a()"></p>
+                    <p class="r3bcontainer"><input type="button" class="r3b" id="r3b" value="(B) Sister" onclick="r3b()"></p>
+                    <p class="r3ccontainer"><input type="button" class="r3c" id="r3c" value="(C) Son" onclick="r3c()"></p>
+                    <p class="r3dcontainer"><input type="button" class="r3d" id="r3d" value="(D) Daughter" onclick="r3d()"></p>
+                </p>
+                <p class="rq3submit"><input class="rq3submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitr3()"></p>
+                <a name="rq4link"></a>
+            </div></div>
+            <div class="r4container"><div class="r4">
+                <p class="rnameq4">QUESTION 4</p>
+                <p class="rq4">How many times do the hands of a clock coincide in 24 hours?</p>
+                <p class="roptions4">
+                    <p class="r4acontainer"><input type="button" class="r4a" id="r4a" value="(A) 22" onclick="r4a()"></p>
+                    <p class="r4bcontainer"><input type="button" class="r4b" id="r4b" value="(B) 24" onclick="r4b()"></p>
+                    <p class="r4ccontainer"><input type="button" class="r4c" id="r4c" value="(C) 26" onclick="r4c()"></p>
+                    <p class="r4dcontainer"><input type="button" class="r4d" id="r4d" value="(D) 28" onclick="r4d()"></p>
+                </p>
+                <p class="rq4submit"><input class="rq4submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitr4()"></p>
+                <a name="rq5link"></a>
+            </div></div>
+            <div class="r5container"><div class="r5">
+                <p class="rnameq5">QUESTION 5</p>
+                <p class="rq5">How many times are the hands of a clock at right angles in 24 hours?</p>
+                <p class="roptions5">
+                    <p class="r5acontainer"><input type="button" class="r5a" id="r5a" value="(A) 22" onclick="r5a()"></p>
+                    <p class="r5bcontainer"><input type="button" class="r5b" id="r5b" value="(B) 44" onclick="r5b()"></p>
+                    <p class="r5ccontainer"><input type="button" class="r5c" id="r5c" value="(C) 24" onclick="r5c()"></p>
+                    <p class="r5dcontainer"><input type="button" class="r5d" id="r5d" value="(D) 48" onclick="r5d()"></p>
+                </p>
+                <p class="rq5submit"><input class="rq5submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitr5()"></p>
+            </div></div>
+        </div>
+        <div class="rallqtnscontainer"><div class="rallqtns">
+            <p class="rgotoqtn">GO TO QUESTION</p>
+            <p class="gotorq1"><a href="#rq1link"><input type="button" value="1" id="gotorq1button" class="gotorq1button"></a></p>
+            <p class="gotorq2"><a href="#rq2link"><input type="button" value="2" id="gotorq2button" class="gotorq2button"></a></p>
+            <p class="gotorq3"><a href="#rq3link"><input type="button" value="3" id="gotorq3button" class="gotorq3button"></a></p>
+            <p class="gotorq4"><a href="#rq4link"><input type="button" value="4" id="gotorq4button" class="gotorq4button"></a></p>
+            <p class="gotorq5"><a href="#rq5link"><input type="button" value="5" id="gotorq5button" class="gotorq5button"></a></p>
+        </div></div>
+        <div class="marksinfocontainer"><div class="marksinfo">
+            <p class="marksinfoheading">MARKS INFORMATION</p>
+            <p class="marks">CORRECT ANSWER - (+4)</p>
+            <p class="marks">WRONG ANSWER - (-1)</p>
+            <p class="marks">UNATTEMPTED - (0)</p>
+        </div></div>
+    </div></section>
+
+    <!--APPTITUDE PART-->
+    <section class="apptitudepart" id="apptitudepart"><div class="container5">
+        <div class="questions">
+            <a name="aq1link"></a>
+            <div class="a1container"><div class="a1">
+                <p class="anameq1">QUESTION 1</p>
+                <p class="aq1">A train running at the speed of 60 km/hr crosses a pole in 9 seconds.</p>
+                <p class="aq1">What is the length of the train?</p>
+                <p class="aoptions1">
+                    <p class="a1acontainer"><input type="button" class="a1a" id="a1a" value="(A) 120 metres" onclick="a1a()"></p>
+                    <p class="a1bcontainer"><input type="button" class="a1b" id="a1b" value="(B) 180 metres" onclick="a1b()"></p>
+                    <p class="a1ccontainer"><input type="button" class="a1c" id="a1c" value="(C) 324 metres" onclick="a1c()"></p>
+                    <p class="a1dcontainer"><input type="button" class="a1d" id="a1d" value="(D) 150 metres" onclick="a1d()"></p>
+                </p>
+                <p class="aq1submit"><input class="aq1submitbutton" type="button" value="SUBMIT ANSWER" onclick="submita1()"></p>
+                <a name="aq2link"></a>
+            </div></div>  
+            <div class="a2container"><div class="a2">
+                <p class="anameq2">QUESTION 2</p>
+                <p class="aq2">The H.C.F. of two numbers is 23 and the other two factors of their L.C.M. are 13 and 14.</p>
+                <p class="aq2">The larger of the two numbers is:</p>
+                <p class="aoptions2">
+                    <p class="a2acontainer"><input type="button" class="a2a" id="a2a" value="(A) 276" onclick="a2a()"></p>
+                    <p class="a2bcontainer"><input type="button" class="a2b" id="a2b" value="(B) 299" onclick="a2b()"></p>
+                    <p class="a2ccontainer"><input type="button" class="a2c" id="a2c" value="(C) 322" onclick="a2c()"></p>
+                    <p class="a2dcontainer"><input type="button" class="a2d" id="a2d" value="(D) 345" onclick="a2d()"></p>
+                </p>
+                <p class="aq2submit"><input class="aq2submitbutton" type="button" value="SUBMIT ANSWER" onclick="submita2()"></p>
+                <a name="aq3link"></a>
+            </div></div>
+            <div class="a3container"><div class="a3">
+                <p class="anameq3">QUESTION 3</p>
+                <p class="aq3">From a group of 7 men and 6 women, five persons are to be selected to form a committee so that at least 3 men are there on the committee.</p>
+                <p class="aq3"> In how many ways can it be done?</p>
+                <p class="aoptions3">
+                    <p class="a3acontainer"><input type="button" class="a3a" id="a3a" value="(A) 564" onclick="a3a()"></p>
+                    <p class="a3bcontainer"><input type="button" class="a3b" id="a3b" value="(B) 645" onclick="a3b()"></p>
+                    <p class="a3ccontainer"><input type="button" class="a3c" id="a3c" value="(C) 735" onclick="a3c()"></p>
+                    <p class="a3dcontainer"><input type="button" class="a3d" id="a3d" value="(D) 756" onclick="a3d()"></p>
+                </p>
+                <p class="aq3submit"><input class="aq3submitbutton" type="button" value="SUBMIT ANSWER" onclick="submita3()"></p>
+                <a name="aq4link"></a>
+            </div></div>
+            <div class="a4container"><div class="a4">
+                <p class="anameq4">QUESTION 4</p>
+                <p class="aq4">An error 2% in excess is made while measuring the side of a square.</p>
+                <p class="aq4">The percentage of error in the calculated area of the square is:</p>
+                <p class="aoptions4">
+                    <p class="a4acontainer"><input type="button" class="a4a" id="a4a" value="(A) 2%" onclick="a4a()"></p>
+                    <p class="a4bcontainer"><input type="button" class="a4b" id="a4b" value="(B) 2.02%" onclick="a4b()"></p>
+                    <p class="a4ccontainer"><input type="button" class="a4c" id="a4c" value="(C) 4%" onclick="a4c()"></p>
+                    <p class="a4dcontainer"><input type="button" class="a4d" id="a4d" value="(D) 4.04%" onclick="a4d()"></p>
+                </p>
+                <p class="aq4submit"><input class="aq4submitbutton" type="button" value="SUBMIT ANSWER" onclick="submita4()"></p>
+                <a name="aq5link"></a>
+            </div></div>
+            <div class="a5container"><div class="a5">
+                <p class="anameq5">QUESTION 5</p>
+                <p class="aq5">Let N be the greatest number that will divide 1305, 4665 and 6905, leaving the same remainder in each case.</p>
+                <p class="aq5">Then sum of the digits in N is:</p>
+                <p class="aoptions5">
+                    <p class="a5acontainer"><input type="button" class="a5a" id="a5a" value="(A) 4" onclick="a5a()"></p>
+                    <p class="a5bcontainer"><input type="button" class="a5b" id="a5b" value="(B) 5" onclick="a5b()"></p>
+                    <p class="a5ccontainer"><input type="button" class="a5c" id="a5c" value="(C) 6" onclick="a5c()"></p>
+                    <p class="a5dcontainer"><input type="button" class="a5d" id="a5d" value="(D) 8" onclick="a5d()"></p>
+                </p>
+                <p class="aq5submit"><input class="aq5submitbutton" type="button" value="SUBMIT ANSWER" onclick="submita5()"></p>
+            </div></div>
+        </div>
+        <div class="aallqtnscontainer"><div class="aallqtns">
+            <p class="agotoqtn">GO TO QUESTION</p>
+            <p class="gotoaq1"><a href="#aq1link"><input type="button" value="1" id="gotoaq1button" class="gotoaq1button"></a></p>
+            <p class="gotoaq2"><a href="#aq2link"><input type="button" value="2" id="gotoaq2button" class="gotoaq2button"></a></p>
+            <p class="gotoaq3"><a href="#aq3link"><input type="button" value="3" id="gotoaq3button" class="gotoaq3button"></a></p>
+            <p class="gotoaq4"><a href="#aq4link"><input type="button" value="4" id="gotoaq4button" class="gotoaq4button"></a></p>
+            <p class="gotoaq5"><a href="#aq5link"><input type="button" value="5" id="gotoaq5button" class="gotoaq5button"></a></p>
+        </div></div>
+        <div class="marksinfocontainer"><div class="marksinfo">
+            <p class="marksinfoheading">MARKS INFORMATION</p>
+            <p class="marks">CORRECT ANSWER - (+4)</p>
+            <p class="marks">WRONG ANSWER - (-1)</p>
+            <p class="marks">UNATTEMPTED - (0)</p>
+        </div></div>
+    </div></section>
+
+
+    <!--ENGLISH PART-->
+    <section class="englishpart" id="englishpart"><div class="container6">
+        <div class="questions">
+            <a name="eq1link"></a>
+            <div class="e1container"><div class="e1">
+                <p class="enameq1">QUESTION 1</p>
+                <p class="eq1">In the following question choose the word which is the exact OPPOSITE of the given words.</p>
+                <p class="eq1">ENORMOUS</p>
+                <p class="eoptions1">
+                    <p class="e1acontainer"><input type="button" class="e1a" id="e1a" value="(A) Soft" onclick="e1a()"></p>
+                    <p class="e1bcontainer"><input type="button" class="e1b" id="e1b" value="(B) Average" onclick="e1b()"></p>
+                    <p class="e1ccontainer"><input type="button" class="e1c" id="e1c" value="(C) Tiny" onclick="e1c()"></p>
+                    <p class="e1dcontainer"><input type="button" class="e1d" id="e1d" value="(D) Weak" onclick="e1d()"></p>
+                </p>
+                <p class="eq1submit"><input class="eq1submitbutton" type="button" value="SUBMIT ANSWER" onclick="submite1()"></p>
+                <a name="eq2link"></a>
+            </div></div>  
+            <div class="e2container"><div class="e2">
+                <p class="enameq2">QUESTION 2</p>
+                <p class="eq2">Find the correctly spelt word.</p>
+                <p class="eoptions2">
+                    <p class="e2acontainer"><input type="button" class="e2a" id="e2a" value="(A) Efficient" onclick="e2a()"></p>
+                    <p class="e2bcontainer"><input type="button" class="e2b" id="e2b" value="(B) Treatmeant" onclick="e2b()"></p>
+                    <p class="e2ccontainer"><input type="button" class="e2c" id="e2c" value="(C) Beterment" onclick="e2c()"></p>
+                    <p class="e2dcontainer"><input type="button" class="e2d" id="e2d" value="(D) Employd" onclick="e2d()"></p>
+                </p>
+                <p class="eq2submit"><input class="eq2submitbutton" type="button" value="SUBMIT ANSWER" onclick="submite2()"></p>
+                <a name="eq3link"></a>
+            </div></div>
+            <div class="e3container"><div class="e3">
+                <p class="enameq3">QUESTION 3</p>
+                <p class="eq3">In question given below out of four alternatives, choose the one which can be substituted for the given word/sentence.</p>
+                <p class="eq3">Extreme old age when a man behaves like a fool</p>
+                <p class="eoptions3">
+                    <p class="e3acontainer"><input type="button" class="e3a" id="e3a" value="(A) Imbecility" onclick="e3a()"></p>
+                    <p class="e3bcontainer"><input type="button" class="e3b" id="e3b" value="(B) Senility" onclick="e3b()"></p>
+                    <p class="e3ccontainer"><input type="button" class="e3c" id="e3c" value="(C) Dotage" onclick="e3c()"></p>
+                    <p class="e3dcontainer"><input type="button" class="e3d" id="e3d" value="(D) Superannuation" onclick="e3d()"></p>
+                </p>
+                <p class="eq3submit"><input class="eq3submitbutton" type="button" value="SUBMIT ANSWER" onclick="submite3()"></p>
+                <a name="eq4link"></a>
+            </div></div>
+            <div class="e4container"><div class="e4">
+                <p class="enameq4">QUESTION 4</p>
+                <p class="eq4">Read the following passage and answer the questions accordingly.</p>
+                <p class="eq4">I felt the wall of the tunnel shiver. The master alarm squealed through my earphones. Almost simultaneously, Jack yelled down to me that there was a warning light on. Fleeting but spectacular sights snapped into ans out of view, the snow, the shower of debris, the moon, looming close and big, the dazzling sunshine for once unfiltered by layers of air. The last twelve hours before re-entry were particular bone-chilling. During this period, I had to go up in to command module. Even after the fiery re-entry splashing down in 81o water in south pacific, we could still see our frosty breath inside the command module.</p>
+                <p class="eq4">The word 'Command Module' used twice in the given passage indicates perhaps that it deals with</p>
+                <p class="eoptions4">
+                    <p class="e4acontainer"><input type="button" class="e4a" id="e4a" value="(A) an alarming journey" onclick="e4a()"></p>
+                    <p class="e4bcontainer"><input type="button" class="e4b" id="e4b" value="(B) a commanding situation" onclick="e4b()"></p>
+                    <p class="e4ccontainer"><input type="button" class="e4c" id="e4c" value="(C) a journey into outer space" onclick="e4c()"></p>
+                    <p class="e4dcontainer"><input type="button" class="e4d" id="e4d" value="(D) a frightful battle" onclick="e4d()"></p>
+                </p>
+                <p class="eq4submit"><input class="eq4submitbutton" type="button" value="SUBMIT ANSWER" onclick="submite4()"></p>
+                <a name="eq5link"></a>
+            </div></div>
+            <div class="e5container"><div class="e5">
+                <p class="enameq5">QUESTION 5</p>
+                <p class="eq5">Read the following passage and answer the questions accordingly.</p>
+                <p class="eq5">I felt the wall of the tunnel shiver. The master alarm squealed through my earphones. Almost simultaneously, Jack yelled down to me that there was a warning light on. Fleeting but spectacular sights snapped into ans out of view, the snow, the shower of debris, the moon, looming close and big, the dazzling sunshine for once unfiltered by layers of air. The last twelve hours before re-entry were particular bone-chilling. During this period, I had to go up in to command module. Even after the fiery re-entry splashing down in 81o water in south pacific, we could still see our frosty breath inside the command module.</p>
+                <p class="eq5">Which one of the following reasons would one consider as more as possible for the warning lights to be on?</p>
+                <p class="eoptions5">
+                    <p class="e5acontainer"><input type="button" class="e5a" id="e5a" value="(A) There was a shower of debris." onclick="e5a()"></p>
+                    <p class="e5bcontainer"><input type="button" class="e5b" id="e5b" value="(B) Jack was yelling." onclick="e5b()"></p>
+                    <p class="e5ccontainer"><input type="button" class="e5c" id="e5c" value="(C) A catastrophe was imminent." onclick="e5c()"></p>
+                    <p class="e5dcontainer"><input type="button" class="e5d" id="e5d" value="(D) The moon was looming close and big." onclick="e5d()"></p>
+                </p>
+                <p class="eq5submit"><input class="eq5submitbutton" type="button" value="SUBMIT ANSWER" onclick="submite5()"></p>
+            </div></div>
+        </div>
+        <div class="eallqtnscontainer"><div class="eallqtns">
+            <p class="egotoqtn">GO TO QUESTION</p>
+            <p class="gotoeq1"><a href="#eq1link"><input type="button" value="1" id="gotoeq1button" class="gotoeq1button"></a></p>
+            <p class="gotoeq2"><a href="#eq2link"><input type="button" value="2" id="gotoeq2button" class="gotoeq2button"></a></p>
+            <p class="gotoeq3"><a href="#eq3link"><input type="button" value="3" id="gotoeq3button" class="gotoeq3button"></a></p>
+            <p class="gotoeq4"><a href="#eq4link"><input type="button" value="4" id="gotoeq4button" class="gotoeq4button"></a></p>
+            <p class="gotoeq5"><a href="#eq5link"><input type="button" value="5" id="gotoeq5button" class="gotoeq5button"></a></p>
+        </div></div>
+        <div class="marksinfocontainer"><div class="marksinfo">
+            <p class="marksinfoheading">MARKS INFORMATION</p>
+            <p class="marks">CORRECT ANSWER - (+4)</p>
+            <p class="marks">WRONG ANSWER - (-1)</p>
+            <p class="marks">UNATTEMPTED - (0)</p>
+        </div></div>
+    </div></section>
+
+
+    <!--CORE SUBJECTS PART-->
+    <section class="coresubjectpart" id="coresubjectpart"><div class="container7">
+        <div class="questions">
+            <a name="cq1link"></a>
+            <div class="c1container"><div class="c1">
+                <p class="cnameq1">QUESTION 1</p>
+                <p class="cq1">The _______ method of an Array object adds and/or removes elements from an array.</p>
+                <p class="coptions1">
+                    <p class="c1acontainer"><input type="button" class="c1a" id="c1a" value="(A) Reverse" onclick="c1a()"></p>
+                    <p class="c1bcontainer"><input type="button" class="c1b" id="c1b" value="(B) Shift" onclick="c1b()"></p>
+                    <p class="c1ccontainer"><input type="button" class="c1c" id="c1c" value="(C) Slice" onclick="c1c()"></p>
+                    <p class="c1dcontainer"><input type="button" class="c1d" id="c1d" value="(D) Splice" onclick="c1d()"></p>
+                </p>
+                <p class="cq1submit"><input class="cq1submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitc1()"></p>
+                <a name="cq2link"></a>
+            </div></div>  
+            <div class="c2container"><div class="c2">
+                <p class="cnameq2">QUESTION 2</p>
+                <p class="cq2">What must reside in the main memory under all situations in a resident - OS computer?</p>
+                <p class="coptions2">
+                    <p class="c2acontainer"><input type="button" class="c2a" id="c2a" value="(A) Linker" onclick="c2a()"></p>
+                    <p class="c2bcontainer"><input type="button" class="c2b" id="c2b" value="(B) Loader" onclick="c2b()"></p>
+                    <p class="c2ccontainer"><input type="button" class="c2c" id="c2c" value="(C) Assembler" onclick="c2c()"></p>
+                    <p class="c2dcontainer"><input type="button" class="c2d" id="c2d" value="(D) Compiler" onclick="c2d()"></p>
+                </p>
+                <p class="cq2submit"><input class="cq2submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitc2()"></p>
+                <a name="cq3link"></a>
+            </div></div>
+            <div class="c3container"><div class="c3">
+                <p class="cnameq3">QUESTION 3</p>
+                <p class="cq3">What is the use of thrashing?</p>
+                <p class="coptions3">
+                    <p class="c3acontainer"><input type="button" class="c3a" id="c3a" value="(A) It improves system performance" onclick="c3a()"></p>
+                    <p class="c3bcontainer"><input type="button" class="c3b" id="c3b" value="(B) It implies excessive page I/O" onclick="c3b()"></p>
+                    <p class="c3ccontainer"><input type="button" class="c3c" id="c3c" value="(C) It decreases the degree of multiprogramming" onclick="c3c()"></p>
+                    <p class="c3dcontainer"><input type="button" class="c3d" id="c3d" value="(D) It reduces page I/O" onclick="c3d()"></p>
+                </p>
+                <p class="cq3submit"><input class="cq3submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitc3()"></p>
+                <a name="cq4link"></a>
+            </div></div>
+            <div class="c4container"><div class="c4">
+                <p class="cnameq4">QUESTION 4</p>
+                <p class="cq4">What will happen when we format a floppy disk?</p>
+                <p class="coptions4">
+                    <p class="c4acontainer"><input type="button" class="c4a" id="c4a" value="(A) Identification information is written on all tracks and sectors" onclick="c4a()"></p>
+                    <p class="c4bcontainer"><input type="button" class="c4b" id="c4b" value="(B) The system area is deleted" onclick="c4b()"></p>
+                    <p class="c4ccontainer"><input type="button" class="c4c" id="c4c" value="(C) Data is written" onclick="c4c()"></p>
+                    <p class="c4dcontainer"><input type="button" class="c4d" id="c4d" value="(D) Data is arranged on the disk in contiguous fashion" onclick="c4d()"></p>
+                </p>
+                <p class="cq4submit"><input class="cq4submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitc4()"></p>
+                <a name="cq5link"></a>
+            </div></div>
+            <div class="c5container"><div class="c5">
+                <p class="cnameq5">QUESTION 5</p>
+                <p class="cq5">Which of the following VTP mode allows to make change in the VLAN information on the switch?</p>
+                <p class="coptions5">
+                    <p class="c5acontainer"><input type="button" class="c5a" id="c5a" value="(A) STP" onclick="c5a()"></p>
+                    <p class="c5bcontainer"><input type="button" class="c5b" id="c5b" value="(B) Transparent" onclick="c5b()"></p>
+                    <p class="c5ccontainer"><input type="button" class="c5c" id="c5c" value="(C) Server" onclick="c5c()"></p>
+                    <p class="c5dcontainer"><input type="button" class="c5d" id="c5d" value="(D) Client" onclick="c5d()"></p>
+                </p>
+                <p class="cq5submit"><input class="cq5submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitc5()"></p>
+                <a name="cq6link"></a>
+            </div></div>
+            <div class="c1container"><div class="c1">
+                <p class="cnameq1">QUESTION 6</p>
+                <p class="cq6">Which linear structure has a provision of Last-In-First-Out (LIFO) mechanism for its elements?</p>
+                <p class="coptions6">
+                    <p class="c6acontainer"><input type="button" class="c6a" id="c6a" value="(A) Stack" onclick="c6a()"></p>
+                    <p class="c6bcontainer"><input type="button" class="c6b" id="c6b" value="(B) Queue" onclick="c6b()"></p>
+                    <p class="c6ccontainer"><input type="button" class="c6c" id="c6c" value="(C) Both (A) & (B)" onclick="c6c()"></p>
+                    <p class="c6dcontainer"><input type="button" class="c6d" id="c6d" value="(D) None of the above" onclick="c6d()"></p>
+                </p>
+                <p class="cq6submit"><input class="cq6submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitc6()"></p>
+                <a name="cq7link"></a>
+            </div></div>  
+            <div class="c7container"><div class="c7">
+                <p class="cnameq7">QUESTION 7</p>
+                <p class="cq7">Which among the below mentioned entities is / are essential for an Array Representation of a Queue?</p>
+                <p class="coptions7">
+                    <p class="c7acontainer"><input type="button" class="c7a" id="c7a" value="(A) An array to hold queue elements" onclick="c7a()"></p>
+                    <p class="c7bcontainer"><input type="button" class="c7b" id="c7b" value="(B) A variable to hold the index of front element" onclick="c7b()"></p>
+                    <p class="c7ccontainer"><input type="button" class="c7c" id="c7c" value="(C) A variable to hold the index of rear element" onclick="c7c()"></p>
+                    <p class="c7dcontainer"><input type="button" class="c7d" id="c7d" value="(D) All of the above" onclick="c7d()"></p>
+                </p>
+                <p class="cq7submit"><input class="cq7submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitc7()"></p>
+                <a name="cq8link"></a>
+            </div></div>
+            <div class="c8container"><div class="c8">
+                <p class="cnameq3">QUESTION 8</p>
+                <p class="cq8">How is specialization denoted in an ER Diagram?</p>
+                <p class="coptions8">
+                    <p class="c8acontainer"><input type="button" class="c8a" id="c8a" value="(A) Triangle labeled IS A" onclick="c8a()"></p>
+                    <p class="c8bcontainer"><input type="button" class="c8b" id="c8b" value="(B) Rectangle labeled IS A" onclick="c8b()"></p>
+                    <p class="c8ccontainer"><input type="button" class="c8c" id="c8c" value="(C) Rectangle Labeled HAS A" onclick="c8c()"></p>
+                    <p class="c8dcontainer"><input type="button" class="c8d" id="c8d" value="(D) Triangle labeled HAS A" onclick="c8d()"></p>
+                </p>
+                <p class="cq8submit"><input class="cq8submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitc8()"></p>
+                <a name="cq9link"></a>
+            </div></div>
+            <div class="c9container"><div class="c9">
+                <p class="cnameq9">QUESTION 9</p>
+                <p class="cq9">Which of the following methods are members of the Vector class and allow you to input a new element? (Java)</p>
+                <p class="coptions9">
+                    <p class="c9acontainer"><input type="button" class="c9a" id="c9a" value="(A) addElement" onclick="c9a()"></p>
+                    <p class="c9bcontainer"><input type="button" class="c9b" id="c9b" value="(B) insert" onclick="c9b()"></p>
+                    <p class="c9ccontainer"><input type="button" class="c9c" id="c9c" value="(C) append" onclick="c9c()"></p>
+                    <p class="c9dcontainer"><input type="button" class="c9d" id="c9d" value="(D) addItem" onclick="c9d()"></p>
+                </p>
+                <p class="cq9submit"><input class="cq9submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitc9()"></p>
+                <a name="cq10link"></a>
+            </div></div>
+            <div class="c10container"><div class="c10">
+                <p class="cnameq10">QUESTION 10</p>
+                <p class="cq10">Which connection does the OSI model support in networking?</p>
+                <p class="coptions10">
+                    <p class="c10acontainer"><input type="button" class="c10a" id="c10a" value="(A) Connection-oriented" onclick="c10a()"></p>
+                    <p class="c10bcontainer"><input type="button" class="c10b" id="c10b" value="(B) Connectionless" onclick="c10b()"></p>
+                    <p class="c10ccontainer"><input type="button" class="c10c" id="c10c" value="(C) Both (A) and (B)" onclick="c10c()"></p>
+                    <p class="c10dcontainer"><input type="button" class="c10d" id="c10d" value="(D) None of the above" onclick="c10d()"></p>
+                </p>
+                <p class="cq10submit"><input class="cq10submitbutton" type="button" value="SUBMIT ANSWER" onclick="submitc10()"></p>
+            </div></div>
+                
+                
+        </div>
+        <div class="callqtnscontainer"><div class="callqtns">
+            <p class="cgotoqtn">GO TO QUESTION</p>
+        <div class="crows">
+            <div class="cleftrow">
+                <p class="gotocq1"><a href="#cq1link"><input type="button" value="1" id="gotocq1button" class="gotocq1button"></a></p>
+                <p class="gotocq2"><a href="#cq2link"><input type="button" value="2" id="gotocq2button" class="gotocq2button"></a></p>
+                <p class="gotocq3"><a href="#cq3link"><input type="button" value="3" id="gotocq3button" class="gotocq3button"></a></p>
+                <p class="gotocq4"><a href="#cq4link"><input type="button" value="4" id="gotocq4button" class="gotocq4button"></a></p>
+                <p class="gotocq5"><a href="#cq5link"><input type="button" value="5" id="gotocq5button" class="gotocq5button"></a></p>
+            </div>
+            <div class="crightrow">
+                <p class="gotocq6"><a href="#cq6link"><input type="button" value="6" id="gotocq6button" class="gotocq6button"></a></p>
+                <p class="gotocq7"><a href="#cq7link"><input type="button" value="7" id="gotocq7button" class="gotocq7button"></a></p>
+                <p class="gotocq8"><a href="#cq8link"><input type="button" value="8" id="gotocq8button" class="gotocq8button"></a></p>
+                <p class="gotocq9"><a href="#cq9link"><input type="button" value="9" id="gotocq9button" class="gotocq9button"></a></p>
+                <p class="gotocq10"><a href="#cq10link"><input type="button" value="10" id="gotocq10button" class="gotocq10button"></a></p>
+            </div>
+        </div>
+        </div></div>
+        <div class="marksinfocontainer"><div class="marksinfo">
+            <p class="marksinfoheading">MARKS INFORMATION</p>
+            <p class="marks">CORRECT ANSWER - (+4)</p>
+            <p class="marks">WRONG ANSWER - (-1)</p>
+            <p class="marks">UNATTEMPTED - (0)</p>
+        </div></div>
+    </div></section>
+
+    <!--END PART-->
+    <section class="end" id="end">
+        <div class="container8">
+            <p class="endtext">YOUR EXAM HAS BEEN SUBMITTED.</p>
+        </div>
+    </section>
+
+    <section class="end" id="endpart">
+        <div class="container9">
+            <p class="classe"><p class="seescore"><input type="button" class="seeurscore" id="seeurscore" value="SEE YOUR SCORE" onclick="score()"></p></p>
+            <p class="classe"><p class="viewans"><input type="button" class="viewcans" id="viewcans" value="VIEW SOLUTIONS" onclick="solutions()"></p></p>
+            <p class="classe"><p class="logout"><input type="button" class="logoutof" id="logoutof" value="LOG OUT" onclick="logout()"></p></p>
+        </div>
+    </section>
+    
+    <!--SCORE TABLE-->
+    <section class="scoretable" id="scoretable">
+        <div class="container10">
+            <div class="sheading"><p class="scoreheading">YOUR SCORE</p></div>
+            <div class="scontent">
+                <table>
+                    <tr>
+                        <th>QUESTION NUMBER</th>
+                        <th>CORRECT OPTION</th>
+                        <th>MARKED OPTION</th>
+                        <th>MAXIMUM MARKS</th>
+                        <th>MARKS OBTAINED</th>
+                    </tr>
+    <!--REASONING SCORE-->
+                    <tr>
+                        <td colspan="5" class="thead">REASONING PART</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>C</td>
+                        <td class="r1marked" id="r1marked"></td>
+                        <td>+4</td>
+                        <td class="r1obmark" id="r1obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>B</td>
+                        <td class="r2marked" id="r2marked"></td>
+                        <td>+4</td>
+                        <td class="r2obmark" id="r2obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>C</td>
+                        <td class="r3marked" id="r3marked"></td>
+                        <td>+4</td>
+                        <td class="r3obmark" id="r3obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>A</td>
+                        <td class="r4marked" id="r4marked"></td>
+                        <td>+4</td>
+                        <td class="r4obmark" id="r4obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>B</td>
+                        <td class="r5marked" id="r5marked"></td>
+                        <td>+4</td>
+                        <td class="r5obmark" id="r5obmark"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="scorerow">Total Marks in REASONING</td>
+                        <td class="scorerow">+20</td>
+                        <td  class="scorerow" class="robmark" id="robmark"></td>
+                    </tr>
+    <!--APPTITUDE SCORE-->                
+                    <tr>
+                        <td colspan="5" class="thead">APPTITUDE PART</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>D</td>
+                        <td class="a1marked" id="a1marked"></td>
+                        <td>+4</td>
+                        <td class="a1obmark" id="a1obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>C</td>
+                        <td class="a2marked" id="a2marked"></td>
+                        <td>+4</td>
+                        <td class="a2obmark" id="a2obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>D</td>
+                        <td class="a3marked" id="a3marked"></td>
+                        <td>+4</td>
+                        <td class="a3obmark" id="a3obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>D</td>
+                        <td class="a4marked" id="a4marked"></td>
+                        <td>+4</td>
+                        <td class="a4obmark" id="a4obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>A</td>
+                        <td class="a5marked" id="a5marked"></td>
+                        <td>+4</td>
+                        <td class="a5obmark" id="a5obmark"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="scorerow">Total Marks in APPTITUDE</td>
+                        <td class="scorerow">+20</td>
+                        <td class="scorerow" class="aobmark" id="aobmark"></td>
+                    </tr>
+    <!--ENGLISH SCORE-->                
+                    <tr>
+                        <td colspan="5" class="thead">ENGLISH PART</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>C</td>
+                        <td class="e1marked" id="e1marked"></td>
+                        <td>+4</td>
+                        <td class="e1obmark" id="e1obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>A</td>
+                        <td class="e2marked" id="e2marked"></td>
+                        <td>+4</td>
+                        <td class="e2obmark" id="e2obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>C</td>
+                        <td class="e3marked" id="e3marked"></td>
+                        <td>+4</td>
+                        <td class="e3obmark" id="e3obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>C</td>
+                        <td class="e4marked" id="e4marked"></td>
+                        <td>+4</td>
+                        <td class="e4obmark" id="e4obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>C</td>
+                        <td class="e5marked" id="e5marked"></td>
+                        <td>+4</td>
+                        <td class="e5obmark" id="e5obmark"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="scorerow">Total Marks in ENGLISH</td>
+                        <td class="scorerow">+20</td>
+                        <td class="scorerow" class="eobmark" id="eobmark"></td>
+                    </tr>
+    <!--CORE SUBJECTS SCORE-->
+                    <tr>
+                        <td colspan="5" class="thead">CORE SUBJECTS PART</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>D</td>
+                        <td class="c1marked" id="c1marked"></td>
+                        <td>+4</td>
+                        <td class="c1obmark" id="c1obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>B</td>
+                        <td class="c2marked" id="c2marked"></td>
+                        <td>+4</td>
+                        <td class="c2obmark" id="c2obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>C</td>
+                        <td class="c3marked" id="c3marked"></td>
+                        <td>+4</td>
+                        <td class="c3obmark" id="c3obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>D</td>
+                        <td class="c4marked" id="c4marked"></td>
+                        <td>+4</td>
+                        <td class="c4obmark" id="c4obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>C</td>
+                        <td class="c5marked" id="c5marked"></td>
+                        <td>+4</td>
+                        <td class="c5obmark" id="c5obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>A</td>
+                        <td class="c6marked" id="c6marked"></td>
+                        <td>+4</td>
+                        <td class="c6obmark" id="c6obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>D</td>
+                        <td class="c7marked" id="c7marked"></td>
+                        <td>+4</td>
+                        <td class="c7obmark" id="c7obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>A</td>
+                        <td class="c8marked" id="c8marked"></td>
+                        <td>+4</td>
+                        <td class="c8obmark" id="c8obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>A</td>
+                        <td class="c9marked" id="c9marked"></td>
+                        <td>+4</td>
+                        <td class="c9obmark" id="c9obmark"></td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>C</td>
+                        <td class="c10marked" id="c10marked"></td>
+                        <td>+4</td>
+                        <td class="c10obmark" id="c10obmark"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="scorerow">Total Marks in CORE SUBJECTS</td>
+                        <td class="scorerow">+40</td>
+                        <td class="scorerow" class="cobmark" id="cobmark"></td>
+                    </tr>
+    <!--TOTAL SCORE-->
+                    <tr>
+                        <td colspan="3" class="fscorerow">TOTAL</td>
+                        <td class="fscorerow">+100</td>
+                        <td class="fscorerow" class="totalscore" id="totalscore"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="back" id="back"><input class="backbutton" type="button" value="GO BACK" onclick="goback()"></div>
+    </section>
+
+    <section class="anspdf" id="anspdf">
+        <div class="solheading"><p class="soluheading">VIEW SOLUTIONS OF</p></div>
+        <div class="containerend">
+            <div class="reasoninganspdf"><a href="https://drive.google.com/file/d/1iB_JqmA2-M1Q_dR_nN1cJ1vEHYxi4GY2/view?usp=sharing" target="_blank"><input type="button" value="REASONING PART" class="rpdf"></a></div>
+            <div class="apptitudeanspdf"><a href="https://drive.google.com/file/d/1j9_os5cw3PkdmLA7K5blaW2efrCzuZ_f/view?usp=sharing" target="_blank"><input type="button" value="APPTITUDE PART" class="apdf"></div>
+            <div class="englishanspdf"><a href="https://drive.google.com/file/d/1dmyaLXZuVh7aLsdbNrOsOpoC_Nn4hreK/view?usp=sharing" target="_blank"><input type="button" value="ENGLISH PART" class="epdf"></div>
+            <div class="coresubjectanspdf"><a href="https://drive.google.com/file/d/1zPSApXrgQp58rbfhEIYmbR3wOL62mJbY/view?usp=sharing" target="_blank"><input type="button" value="CORE SUBJECT PART" class="cpdf"></a></div>            
+        </div>
+        <div class="solgoback"><input type="button" class="solugobackbutton" value="GO BACK" onclick="solgoback()"></div>
+    </section>
+    <section class="loggedout" id="loggedout"><p class="log">You have been logged out.</p></section>
+
+</body>
+</html

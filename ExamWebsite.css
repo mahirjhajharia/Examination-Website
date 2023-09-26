@@ -1,0 +1,1241 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* LOGIN FORM CSS */
+/*.loginform{
+    display:none;
+}*/
+
+.loginform{
+    height:600px;
+    background:rgba(0,0,0,0.8) url('https://i.postimg.cc/V6xz50qd/Background-2.jpg');
+    background-size:cover;
+    background-blend-mode:darken;
+}
+.loginheading{
+    font-size:25px;
+    font-weight:bold;
+    color:black;
+    text-shadow:1px 2px gray;
+}
+.info{
+    padding-top:40px;
+    font-size:24px;
+    color:rgba(255, 228, 225, 0.589);
+}
+.container1{
+    padding-top:55px;
+    padding-left:460px;
+}
+.main1{
+    width:300px;
+    height:280px;
+    padding-top:20px;
+    padding-left:30px;
+    border:2px solid gray;
+    border-radius:10px;
+    background-color:honeydew;
+}
+#loginform{
+    padding-top:20px;
+    padding-left:5px;
+}
+.parts{
+    padding-top:10px;
+}
+.logininput{
+    width:250px;
+    padding-top:7px;
+    padding-bottom:7px;
+    padding-left:7px;
+}
+.loginbutton{
+    width:258px;
+    padding-top:7px;
+    padding-bottom:7px;
+    padding-left:7px;
+    background-color:lavender;
+    font-weight:bold;
+    cursor:pointer;
+}
+.loginbutton:hover{
+    background-color:wheat;
+}
+
+/* CONTACT DETAIL FORM CSS */
+.contactdetails{
+    display:none;
+}
+.contactdetails{
+    border:2px solid grey;
+}
+.contactdetailsheading{
+    padding-left:145px;
+}
+.container2{
+    max-width:500px;
+    margin:15px auto;
+    padding-top:30px;
+}
+.contactdetails form{
+    padding-top:20px;
+}
+.para2{
+    padding-top:10px;
+    padding-bottom:2px;
+}
+.type1{
+    width:100%;
+    border:1px solid grey;
+    border-radius:4px;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+}
+.button2{
+    padding-left:200px;
+    padding-top:25px;
+}
+.lbutton2{
+    padding:6px 15px;
+    border-radius:2px;
+    border:1px solid palegoldenrod;
+    background-color:mediumspringgreen;
+    cursor:pointer;
+    font-weight:bold;
+}
+.contactdetails select{
+    width:100%;
+    padding:2px 2px;
+    border:1px solid grey;
+    border-radius:4px;
+}
+.text2{
+    padding-bottom:5px;
+}
+
+
+/* MAIN PAGE CSS */
+.mainpage{
+    display:none;
+}
+
+.mainpage{
+    position:fixed;
+    top:0;
+}
+.container3{
+    display:flex;
+}
+.leftpart1{
+    display:flex;
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-right:20px;
+    border:2px solid lightgray; 
+    background-color:white;
+}
+.leftpart1 input{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:7px;
+    padding-bottom:7px;
+    background-color:cornflowerblue;
+    font-weight:bold;
+    color:white;
+    border:1px solid white;  
+    cursor:pointer;
+}
+.leftpart1 input:hover{
+    background-color:steelblue;
+}
+
+.subjects{
+    padding-left:10px;
+}
+#submitexambutton{
+    padding-left:270px;
+}
+.leftpart2{
+    display:flex;
+    padding-right:30px;
+    padding-left:825px;
+    padding-top:12px;
+    padding-bottom:13px;
+    border:2px solid lightgray;
+    font-size:17px;
+    background-color: white;
+}
+
+
+.rightpart{
+    width:260px;
+    height:100px;
+    border:2px solid lightgray;
+    background-color:seashell;
+}
+.profile{
+    font-size:20px;
+    font-weight:bold;
+    padding-left:55px;
+    padding-top:10px;
+}
+.name{
+    padding-top:7px;
+    padding-left:42px;
+    color:midnightblue;
+    font-weight:bold;
+}
+.uid{
+    padding-top:3px;
+    color:midnightblue;
+    padding-left:42px;
+    font-weight:bold;
+
+}
+
+/* INSTRUCTIONS PART */
+.instructionspart{
+    display:none;
+}
+.instcontent{
+    padding-left:90px;
+    padding-top:120px;
+    padding-right:90px;
+    padding-bottom:50px;
+}
+.instcontainer{
+    width:970px;
+    border:2px solid grey;
+    padding-left:50px;
+    padding-top:30px;
+    padding-right:50px;
+    padding-bottom: 30px;
+}
+.instheading{
+    font-size:22px;
+    font-weight:bold;
+    padding-left:270px;
+    color:steelblue;
+    padding-bottom:20px;
+    padding-top:10px;
+}
+.instcontainer li{
+    padding-bottom:10px;
+    font-size:15px;
+}
+
+/* COMMON FOR ALL PARTS */
+.questions{
+    padding-top:100px;
+}
+
+
+/* REASONING PART CSS */
+.reasoningpart{
+    display:none;
+}
+
+/* QUESTIONS PART */
+
+.container4{
+    display:flex;
+}
+.r1container,.r2container,.r3container,.r4container,.r5container{
+    padding-left:60px;
+    padding-top:50px;
+    padding-right:60px;
+    padding-bottom:50px;
+}
+.r1,.r2,.r3,.r4,.r5{
+    width:700px;
+    border:2px solid grey;
+    padding-left:40px;
+    padding-top:30px;
+    padding-right:40px;
+    padding-bottom: 30px; 
+}
+.r1acontainer,.r1bcontainer,.r1ccontainer,.r1dcontainer{
+    padding-bottom:10px;
+}
+.r2acontainer,.r2bcontainer,.r2ccontainer,.r2dcontainer{
+    padding-bottom:10px;
+}
+.r3acontainer,.r3bcontainer,.r3ccontainer,.r3dcontainer{
+    padding-bottom:10px;
+}
+.r4acontainer,.r4bcontainer,.r4ccontainer,.r4dcontainer{
+    padding-bottom:10px;
+}
+.r5acontainer,.r5bcontainer,.r5ccontainer,.r5dcontainer{
+    padding-bottom:10px;
+}
+.r1a,.r1b,.r1c,.r1d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.r2a,.r2b,.r2c,.r2d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.r3a,.r3b,.r3c,.r3d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.r4a,.r4b,.r4c,.r4d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.r5a,.r5b,.r5c,.r5d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.r1a:hover,.r1b:hover,.r1c:hover,.r1d:hover{
+    background-color:honeydew;
+}
+.r2a:hover,.r2b:hover,.r2c:hover,.r2d:hover{
+    background-color:honeydew;
+}
+.r3a:hover,.r3b:hover,.r3c:hover,.r3d:hover{
+    background-color:honeydew;
+}
+.r4a:hover,.r4b:hover,.r4c:hover,.r4d:hover{
+    background-color:honeydew;
+}
+.r5a:hover,.r5b:hover,.r5c:hover,.r5d:hover{
+    background-color:honeydew;
+}
+.rq1,.rq2,.rq3,.rq4,.rq5{
+    padding-bottom:5px;
+}
+.roptions1,.roptions2,.roptions3,.roptions4,.roptions5{
+    padding-top:15px;  
+}
+.rq1submit,.rq2submit,.rq3submit,.rq4submit,.rq5submit{
+    padding-top:30px;
+    padding-left:560px;
+}
+.rq1submitbutton,.rq2submitbutton,.rq3submitbutton,.rq4submitbutton,.rq5submitbutton{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:7px;
+    padding-bottom:7px;
+    background-color:steelblue;
+    color:white;
+    border:1px solid white;  
+    cursor:pointer;
+}
+.rq1submitbutton:hover,.rq2submitbutton:hover,.rq3submitbutton:hover,.rq4submitbutton:hover,.rq5submitbutton:hover{
+    background-color:cornflowerblue;
+}
+.rnameq1,.rnameq2,.rnameq3,.rnameq4,.rnameq5{
+    font-weight:bold;
+    padding-bottom:10px;
+}
+
+/* REASONING ALL QUESTIONS BOX PART */
+.rallqtnscontainer{
+    padding-left:95px;
+    width:260px;
+    position:fixed;
+    top:102px;
+    right:5px; 
+}
+.rallqtns{
+    width:260px;
+    height:300px;
+    border:3px solid lightgray;
+    padding-left:40px;
+    padding-top:40px;
+    background-color:white;
+}
+.rgotoqtn{
+    font-weight:bold;
+    font-size:15px;
+    padding-left:20px;
+    padding-bottom:10px;
+}
+.gotorq1,.gotorq2,.gotorq3,.gotorq4,.gotorq5{
+    padding-top:15px;
+    padding-left:70px;
+
+}
+.gotorq1button,.gotorq2button,.gotorq3button,.gotorq4button,.gotorq5button{
+    font-size:16px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:9px;
+    padding-right:9px;
+    background-color:white;
+    border:2px solid lightgray;
+}
+.gotorq1button:hover,.gotorq2button:hover,.gotorq3button:hover,.gotorq4button:hover,.gotorq5button:hover{
+    background-color:cornflowerblue;
+    border:2px solid cornflowerblue;
+    color:white;
+}
+.rallqtnscontainer a{
+    text-decoration: none;
+}
+
+
+/* MARKS INFO PART */
+.marksinfocontainer{
+    padding-left:95px;
+    width:260px;
+    position:fixed;
+    top:444px;
+    right:5px; 
+}
+.marksinfo{
+    width:260px;
+    height:120px;
+    border:3px solid lightgray;
+    padding-left:40px;
+    padding-top:40px;
+    background-color:white;
+    font-weight:bold;
+}
+.marksinfoheading{
+    color:black;
+    padding-bottom:10px;
+    font-size:16px;
+}
+.marks{
+    color:darkcyan;
+}
+
+
+
+/* APPTITUDE PART CSS */
+.apptitudepart{
+    display:none;
+}
+
+
+/* QUESTIONS PART */
+.container5{
+    display:flex;
+}
+.a1container,.a2container,.a3container,.a4container,.a5container{
+    padding-left:60px;
+    padding-top:50px;
+    padding-right:60px;
+    padding-bottom:50px;
+}
+.a1,.a2,.a3,.a4,.a5{
+    width:700px;
+    border:2px solid grey;
+    padding-left:40px;
+    padding-top:30px;
+    padding-right:40px;
+    padding-bottom: 30px; 
+}
+.a1acontainer,.a1bcontainer,.a1ccontainer,.a1dcontainer{
+    padding-bottom:10px;
+}
+.a2acontainer,.a2bcontainer,.a2ccontainer,.a2dcontainer{
+    padding-bottom:10px;
+}
+.a3acontainer,.a3bcontainer,.a3ccontainer,.a3dcontainer{
+    padding-bottom:10px;
+}
+.a4acontainer,.a4bcontainer,.a4ccontainer,.a4dcontainer{
+    padding-bottom:10px;
+}
+.a5acontainer,.a5bcontainer,.a5ccontainer,.a5dcontainer{
+    padding-bottom:10px;
+}
+.a1a,.a1b,.a1c,.a1d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.a2a,.a2b,.a2c,.a2d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.a3a,.a3b,.a3c,.a3d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.a4a,.a4b,.a4c,.a4d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.a5a,.a5b,.a5c,.a5d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.a1a:hover,.a1b:hover,.a1c:hover,.a1d:hover{
+    background-color:honeydew;
+}
+.a2a:hover,.a2b:hover,.a2c:hover,.a2d:hover{
+    background-color:honeydew;
+}
+.a3a:hover,.a3b:hover,.a3c:hover,.a3d:hover{
+    background-color:honeydew;
+}
+.a4a:hover,.a4b:hover,.a4c:hover,.a4d:hover{
+    background-color:honeydew;
+}
+.a5a:hover,.a5b:hover,.a5c:hover,.a5d:hover{
+    background-color:honeydew;
+}
+.aq1,.aq2,.aq3,.aq4,.aq5{
+    padding-bottom:5px;
+}
+.aoptions1,.aoptions2,.aoptions3,.aoptions4,.aoptions5{
+    padding-top:15px;  
+}
+.aq1submit,.aq2submit,.aq3submit,.aq4submit,.aq5submit{
+    padding-top:30px;
+    padding-left:560px;
+}
+.aq1submitbutton,.aq2submitbutton,.aq3submitbutton,.aq4submitbutton,.aq5submitbutton{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:7px;
+    padding-bottom:7px;
+    background-color:steelblue;
+    color:white;
+    border:1px solid white;  
+    cursor:pointer;
+}
+.aq1submitbutton:hover,.aq2submitbutton:hover,.aq3submitbutton:hover,.aq4submitbutton:hover,.aq5submitbutton:hover{
+    background-color:cornflowerblue;
+}
+.anameq1,.anameq2,.anameq3,.anameq4,.anameq5{
+    font-weight:bold;
+    padding-bottom:10px;
+}
+
+/* APPTITUDE ALL QUESTIONS BOX PART */
+.aallqtnscontainer{
+    padding-left:95px;
+    width:260px;
+    position:fixed;
+    top:102px;
+    right:5px; 
+}
+.aallqtns{
+    width:260px;
+    height:300px;
+    border:3px solid lightgray;
+    padding-left:40px;
+    padding-top:40px;
+    background-color:white;
+}
+.agotoqtn{
+    font-weight:bold;
+    font-size:15px;
+    padding-left:20px;
+    padding-bottom:10px;
+}
+.gotoaq1,.gotoaq2,.gotoaq3,.gotoaq4,.gotoaq5{
+    padding-top:15px;
+    padding-left:70px;
+
+}
+.gotoaq1button,.gotoaq2button,.gotoaq3button,.gotoaq4button,.gotoaq5button{
+    font-size:16px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:9px;
+    padding-right:9px;
+    background-color:white;
+    border:2px solid lightgray;
+}
+.gotoaq1button:hover,.gotoaq2button:hover,.gotoaq3button:hover,.gotoaq4button:hover,.gotoaq5button:hover{
+    background-color:cornflowerblue;
+    border:2px solid cornflowerblue;
+    color:white;
+}
+.aallqtnscontainer a{
+    text-decoration: none;
+}
+
+
+/* ENGLISH PART CSS */
+.englishpart{
+    display:none;
+}
+
+/* QUESTIONS PART */
+.container6{
+    display:flex;
+}
+.e1container,.e2container,.e3container,.e4container,.e5container{
+    padding-left:60px;
+    padding-top:50px;
+    padding-right:60px;
+    padding-bottom:50px;
+}
+.e1,.e2,.e3,.e4,.e5{
+    width:700px;
+    border:2px solid grey;
+    padding-left:40px;
+    padding-top:30px;
+    padding-right:40px;
+    padding-bottom: 30px; 
+}
+.e1acontainer,.e1bcontainer,.e1ccontainer,.e1dcontainer{
+    padding-bottom:10px;
+}
+.e2acontainer,.e2bcontainer,.e2ccontainer,.e2dcontainer{
+    padding-bottom:10px;
+}
+.e3acontainer,.e3bcontainer,.e3ccontainer,.e3dcontainer{
+    padding-bottom:10px;
+}
+.e4acontainer,.e4bcontainer,.e4ccontainer,.e4dcontainer{
+    padding-bottom:10px;
+}
+.e5acontainer,.e5bcontainer,.e5ccontainer,.e5dcontainer{
+    padding-bottom:10px;
+}
+.e1a,.e1b,.e1c,.e1d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.e2a,.e2b,.e2c,.e2d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.e3a,.e3b,.e3c,.e3d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.e4a,.e4b,.e4c,.e4d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.e5a,.e5b,.e5c,.e5d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.e1a:hover,.e1b:hover,.e1c:hover,.e1d:hover{
+    background-color:honeydew;
+}
+.e2a:hover,.e2b:hover,.e2c:hover,.e2d:hover{
+    background-color:honeydew;
+}
+.e3a:hover,.e3b:hover,.e3c:hover,.e3d:hover{
+    background-color:honeydew;
+}
+.e4a:hover,.e4b:hover,.e4c:hover,.e4d:hover{
+    background-color:honeydew;
+}
+.e5a:hover,.e5b:hover,.e5c:hover,.e5d:hover{
+    background-color:honeydew;
+}
+.eq1,.eq2,.eq3,.eq4,.eq5{
+    padding-bottom:5px;
+}
+.eoptions1,.eoptions2,.eoptions3,.eoptions4,.eoptions5{
+    padding-top:15px;  
+}
+.eq1submit,.eq2submit,.eq3submit,.eq4submit,.eq5submit{
+    padding-top:30px;
+    padding-left:560px;
+}
+.eq1submitbutton,.eq2submitbutton,.eq3submitbutton,.eq4submitbutton,.eq5submitbutton{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:7px;
+    padding-bottom:7px;
+    background-color:steelblue;
+    color:white;
+    border:1px solid white;  
+    cursor:pointer;
+}
+.eq1submitbutton:hover,.eq2submitbutton:hover,.eq3submitbutton:hover,.eq4submitbutton:hover,.eq5submitbutton:hover{
+    background-color:cornflowerblue;
+}
+.enameq1,.enameq2,.enameq3,.enameq4,.enameq5{
+    font-weight:bold;
+    padding-bottom:10px;
+}
+
+/* ENGLISH ALL QUESTIONS BOX PART */
+.eallqtnscontainer{
+    padding-left:95px;
+    width:260px;
+    position:fixed;
+    top:102px;
+    right:5px; 
+}
+.eallqtns{
+    width:260px;
+    height:300px;
+    border:3px solid lightgray;
+    padding-left:40px;
+    padding-top:40px;
+    background-color:white;
+}
+.egotoqtn{
+    font-weight:bold;
+    font-size:15px;
+    padding-left:20px;
+    padding-bottom:10px;
+}
+.gotoeq1,.gotoeq2,.gotoeq3,.gotoeq4,.gotoeq5{
+    padding-top:15px;
+    padding-left:70px;
+
+}
+.gotoeq1button,.gotoeq2button,.gotoeq3button,.gotoeq4button,.gotoeq5button{
+    font-size:16px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:9px;
+    padding-right:9px;
+    background-color:white;
+    border:2px solid lightgray;
+}
+.gotoeq1button:hover,.gotoeq2button:hover,.gotoeq3button:hover,.gotoeq4button:hover,.gotoeq5button:hover{
+    background-color:cornflowerblue;
+    border:2px solid cornflowerblue;
+    color:white;
+}
+.eallqtnscontainer a{
+    text-decoration: none;
+}
+
+
+/* CORE SUBJECT PART CSS */
+.coresubjectpart{
+    display:none;
+}
+
+/* QUESTIONS PART */
+.container7{
+    display:flex;
+}
+.c1container,.c2container,.c3container,.c4container,.c5container,.c6container,.c7container,.c8container,.c9container,.c10container{
+    padding-left:60px;
+    padding-top:50px;
+    padding-right:60px;
+    padding-bottom:50px;
+}
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10{
+    width:700px;
+    border:2px solid grey;
+    padding-left:40px;
+    padding-top:30px;
+    padding-right:40px;
+    padding-bottom: 30px; 
+}
+.c1acontainer,.c1bcontainer,.c1ccontainer,.c1dcontainer{
+    padding-bottom:10px;
+}
+.c2acontainer,.c2bcontainer,.c2ccontainer,.c2dcontainer{
+    padding-bottom:10px;
+}
+.c3acontainer,.c3bcontainer,.c3ccontainer,.c3dcontainer{
+    padding-bottom:10px;
+}
+.c4acontainer,.c4bcontainer,.c4ccontainer,.c4dcontainer{
+    padding-bottom:10px;
+}
+.c5acontainer,.c5bcontainer,.c5ccontainer,.c5dcontainer{
+    padding-bottom:10px;
+}
+.c6acontainer,.c6bcontainer,.c6ccontainer,.c6dcontainer{
+    padding-bottom:10px;
+}
+.c7acontainer,.c7bcontainer,.c7ccontainer,.c7dcontainer{
+    padding-bottom:10px;
+}
+.c8acontainer,.c8bcontainer,.c8ccontainer,.c8dcontainer{
+    padding-bottom:10px;
+}
+.c9acontainer,.c9bcontainer,.c9ccontainer,.c9dcontainer{
+    padding-bottom:10px;
+}
+.c10acontainer,.c10bcontainer,.c10ccontainer,.c10dcontainer{
+    padding-bottom:10px;
+}
+.c1a,.c1b,.c1c,.c1d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.c2a,.c2b,.c2c,.c2d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.c3a,.c3b,.c3c,.c3d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.c4a,.c4b,.c4c,.c4d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.c5a,.c5b,.c5c,.c5d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.c6a,.c6b,.c6c,.c6d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.c7a,.c7b,.c7c,.c7d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.c8a,.c8b,.c8c,.c8d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.c9a,.c9b,.c9c,.c9d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.c10a,.c10b,.c10c,.c10d{
+    width:500px;
+    text-align:left;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:white;
+    border:2px solid steelblue;
+}
+.c1a:hover,.c1b:hover,.c1c:hover,.c1d:hover{
+    background-color:honeydew;
+}
+.c2a:hover,.c2b:hover,.c2c:hover,.c2d:hover{
+    background-color:honeydew;
+}
+.c3a:hover,.c3b:hover,.c3c:hover,.c3d:hover{
+    background-color:honeydew;
+}
+.c4a:hover,.c4b:hover,.c4c:hover,.c4d:hover{
+    background-color:honeydew;
+}
+.c5a:hover,.c5b:hover,.c5c:hover,.c5d:hover{
+    background-color:honeydew;
+}
+.c6a:hover,.c6b:hover,.c6c:hover,.c6d:hover{
+    background-color:honeydew;
+}
+.c7a:hover,.c7b:hover,.c7c:hover,.c7d:hover{
+    background-color:honeydew;
+}
+.c8a:hover,.c8b:hover,.c8c:hover,.c8d:hover{
+    background-color:honeydew;
+}
+.c9a:hover,.c9b:hover,.c9c:hover,.c9d:hover{
+    background-color:honeydew;
+}
+.c10a:hover,.c10b:hover,.c10c:hover,.c10d:hover{
+    background-color:honeydew;
+}
+.cq1,.cq2,.cq3,.cq4,.cq5,.cq6,.cq7,.cq8,.cq9,.cq10{
+    padding-bottom:5px;
+}
+.coptions1,.coptions2,.coptions3,.coptions4,.coptions5,.coptions6,.coptions7,.coptions8,.coptions9,.coptions10{
+    padding-top:15px;  
+}
+.cq1submit,.cq2submit,.cq3submit,.cq4submit,.cq5submit,.cq6submit,.cq7submit,.cq8submit,.cq9submit,.cq10submit{
+    padding-top:30px;
+    padding-left:560px;
+}
+.cq1submitbutton,.cq2submitbutton,.cq3submitbutton,.cq4submitbutton,.cq5submitbutton,.cq6submitbutton,.cq7submitbutton,.cq8submitbutton,.cq9submitbutton,.cq10submitbutton{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:7px;
+    padding-bottom:7px;
+    background-color:steelblue;
+    color:white;
+    border:1px solid white;  
+    cursor:pointer;
+}
+.cq1submitbutton:hover,.cq2submitbutton:hover,.cq3submitbutton:hover,.cq4submitbutton:hover,.cq5submitbutton:hover,.cq6submitbutton:hover,.cq7submitbutton:hover,.cq8submitbutton:hover,.cq9submitbutton:hover,.cq10submitbutton:hover{
+    background-color:cornflowerblue;
+}
+.cnameq1,.cnameq2,.cnameq3,.cnameq4,.cnameq5,.cnameq6,.cnameq7,.cnameq8,.cnameq9,.cnameq10{
+    font-weight:bold;
+    padding-bottom:10px;
+}
+
+/* CORE SUBJECT ALL QUESTIONS BOX PART */
+.callqtnscontainer{
+    padding-left:95px;
+    width:260px;
+    position:fixed;
+    top:102px;
+    right:5px; 
+}
+.callqtns{
+    width:260px;
+    height:300px;
+    border:3px solid lightgray;
+    padding-left:40px;
+    padding-top:40px;
+    background-color:white;
+}
+.crows{
+    display:flex;
+}
+.cgotoqtn{
+    font-weight:bold;
+    font-size:15px;
+    padding-left:20px;
+    padding-bottom:10px;
+}
+.gotocq1,.gotocq2,.gotocq3,.gotocq4,.gotocq5,.gotocq6,.gotocq7,.gotocq8,.gotocq9,.gotocq10{
+    padding-top:15px;
+    padding-left:38px;
+
+}
+.gotocq1button,.gotocq2button,.gotocq3button,.gotocq4button,.gotocq5button,.gotocq6button,.gotocq7button,.gotocq8button,.gotocq9button{
+    font-size:16px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:9px;
+    padding-right:9px;
+    background-color:white;
+    border:2px solid lightgray;
+}
+.gotocq10button{
+    font-size:16px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:6px;
+    padding-right:6px;
+    background-color:white;
+    border:2px solid lightgray;
+
+}
+.gotocq1button:hover,.gotocq2button:hover,.gotocq3button:hover,.gotocq4button:hover,.gotocq5button:hover,.gotocq6button:hover,.gotocq7button:hover,.gotocq8button:hover,.gotocq9button:hover,.gotocq10button:hover{
+    background-color:cornflowerblue;
+    border:2px solid cornflowerblue;
+    color:white;
+}
+.callqtnscontainer a{
+    text-decoration: none;
+}
+
+/* END */
+.end{
+    display:none;
+}
+.container8{
+    padding-left:410px;
+    padding-top:50px;
+    padding-right:420px;
+    padding-bottom:50px;
+}
+.endtext{
+    border:2px solid steelblue;
+    font-weight:bold;
+    font-size:20px;
+    color:maroon;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+/* END PART */
+
+.container9{
+    display:flex;
+    padding-left:400px;
+    padding-right:40px;
+}
+.classe{
+    padding-left:20px;
+}
+.container9 input{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:lavender;
+    font-weight:bold;
+    border-radius:4px;
+    border:2px solid midnightblue;
+}
+.container9 input:hover{
+    background-color:silver;   
+}
+
+
+/* SCORE TABLE */
+.scoretable{
+    display:none;
+}
+.container10{
+    padding-bottom:30px;
+    padding-top:40px;
+    padding-left:380px;
+}
+.scoreheading{
+    padding-left:180px;
+    padding-bottom:20px;
+    font-weight:bold;
+    font-size:25px;
+    color:maroon;
+}
+table{
+    border:2px solid black;
+    border-collapse:collapse;
+    width:400px;
+}
+th,td{
+    border:2px solid black;
+    border-collapse:collapse;
+    padding:12px;
+    font-size:16px;
+}
+.back{
+    padding-left:612px;
+    padding-top:10px;
+    padding-bottom:100px;
+}
+.backbutton{
+    padding-left:12px;
+    padding-right:12px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:lavender;
+    font-weight:bold;
+    border-radius:3px;
+    border:1px solid black;
+    cursor:pointer;
+}
+.backbutton:hover{
+    background-color:honeydew;
+}
+.thead{
+    font-weight:bold;
+    color:slategrey;
+    background-color:mistyrose;
+    padding-left:200px;
+}
+.scontent th{
+    background-color:papayawhip;
+}
+.scorerow{
+    font-weight:bold;
+    color:midnightblue;
+    background-color:honeydew;
+}
+.fscorerow{
+    font-weight:bold;
+    background-color:papayawhip;
+    color:darkslategray;
+}
+
+/* ANSWER PDFS */
+.anspdf{
+    display:none;
+}
+.containerend{
+    display:flex;
+    padding-left:180px;
+}
+.solheading{
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:450px;
+    font-weight:bold;
+    color:maroon;
+    font-size:25px;
+}
+.rpdf,.apdf,.epdf,.cpdf{
+    padding-left:12px;
+    padding-right:12px;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-weight:bold;
+    color:teal;
+    background-color:mistyrose;
+    border-radius:3px;
+    font-size:17px;
+    border:1px solid grey;
+}
+.rpdf:hover,.apdf:hover,.epdf:hover,.cpdf:hover{
+    background-color:honeydew;
+}
+.reasoninganspdf,.apptitudeanspdf,.englishanspdf,.coresubjectanspdf{
+    padding-left:20px;
+}
+.solgoback{
+    padding-left:545px;
+    padding-top:25px;
+    padding-bottom:100px;
+}
+.solugobackbutton{
+    padding-left:12px;
+    padding-right:12px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:lavender;
+    font-weight:bold;
+    border-radius:3px;
+    border:1px solid black;
+    cursor:pointer;
+}
+.solugobackbutton:hover{
+    background-color:honeydew;
+}
+
+/* LOGGED OUT */
+.loggedout{
+    display:none;
+}
+.log{
+    padding-top:40px;
+    padding-left:420px;
+    font-size:24px;
+    font-weight:bold;
+    color:maroon;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
